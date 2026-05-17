@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <!-- EmailJS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>   
+    <title>Portfolio — Zaid Bajwa</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="#home">Zaid Bajwa</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>               
+            </ul>
+            <div class="hamburger">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="hero-tagline">
+                    I am
+                    <span class="tagline-name">Zaid Ahmed Bajwa.</span>
+                    <br>
+                    Precision in every
+                    <span class="tagline-highlight">component.</span>
+                    Performance in every
+                    <span class="tagline-highlight">query.</span>
+                    Purpose in every
+                    <span class="tagline-highlight">project</span>
+                    — this is how I build with the
+                    <span class="tagline-mern">MERN Stack.</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="cv/Zaid CV (1).pdf" download class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i>
+                        Download CV
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fa-solid fa-eye"></i>
+                        View Projects
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zaid-ahmed-bajwa-9ba295324" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=zaidbajwa94@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hec profile.jpeg" alt="Zaid Bajwa">
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-container">
+                <div class="about-bio">
+                    <h3 class="about-heading">
+                        I am a <span>MERN Stack Developer</span>
+                        based in Pakistan 🇵🇰
+                    </h3>
+                    <p class="about-desc">
+                        Passionate about building scalable, high-performance
+                        web applications that solve real-world problems.
+                        I have completed my internship at 
+                        <span class="highlight">GigaLabs</span>
+                        for 2 months from 01/July/2025 to 31/September/2025, 
+                        where I sharpened my skills in Full-Stack Development 
+                        with the MERN Stack.
+                    </p>
+                    <p class="about-desc">
+                        I believe great software is not just about working code —
+                        it is about clean architecture, seamless user experience
+                        and purposeful engineering.
+                    </p>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h4>10+</h4>
+                        <p>Projects Done</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>2+</h4>
+                        <p>Years Learning</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>2</h4>
+                        <p>Clients Served</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>100%</h4>
+                        <p>Dedication</p>
+                    </div>
+                </div>
+
+                <div class="about-bottom">
+                    <div class="about-education">
+                        <h3 class="about-subheading">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Education
+                        </h3>
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-info">
+                                <h4>BS Computer Science</h4>
+                                <p>UET Lahore — 2023 to Present</p>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-info">
+                                <h4>Full Stack Internship</h4>
+                                <p>GigaLabs — July to September 2025</p>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-info">
+                                <h4>Intermediate FSC</h4>
+                                <p>GICCL — 2021 to 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-hobbies">
+                        <h3 class="about-subheading">
+                            <i class="fa-solid fa-heart"></i>
+                            Hobbies
+                        </h3>
+                        <div class="hobbies-grid">
+                            <div class="hobby-item">
+                                <i class="fa-solid fa-code"></i>
+                                <span>Coding</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Reading</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Gaming</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fa-solid fa-music"></i>
+                                <span>Music</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fa-solid fa-camera"></i>
+                                <span>Photography</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>Travelling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <p class="section-subtitle">What I bring to the table</p>
+            </div>
+            <div class="skills-cards">
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>Building responsive, pixel-perfect interfaces using HTML5, CSS3 and JavaScript with modern design principles.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-node-js"></i>
+                    </div>
+                    <h3>MERN Stack</h3>
+                    <p>Full stack development with MongoDB, Express.js, React and Node.js — end to end web applications.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">
+                        <i class="fa-solid fa-brain"></i>
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Exploring machine learning, AI integration and intelligent systems to build smarter web applications.</p>
+                </div>
+            </div>
+            <div class="skills-bars">
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span class="skill-name">
+                            <i class="fa-brands fa-html5"></i>
+                            Frontend Development
+                        </span>
+                        <span class="skill-percent" data-target="90">0%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span class="skill-name">
+                            <i class="fa-brands fa-react"></i>
+                            MERN Stack
+                        </span>
+                        <span class="skill-percent" data-target="80">0%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span class="skill-name">
+                            <i class="fa-solid fa-brain"></i>
+                            Artificial Intelligence
+                        </span>
+                        <span class="skill-percent" data-target="85">0%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2 class="section-title">My <span>Projects</span></h2>
+                <p class="section-subtitle">Things I have built so far</p>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="mern">MERN</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="frontend">
+                    <div class="card-image">
+                        <img src="images/quiz app.png" alt="Online Quiz App">
+                        <div class="card-overlay">
+                            <a href="#" target="_blank" class="overlay-btn">
+                                <i class="fa-solid fa-eye"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Online Quiz App</h3>
+                        <p class="card-desc">An interactive quiz platform with timer, multiple categories, score tracking and leaderboard for competitive learning.</p>
+                        <div class="card-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mern">
+                    <div class="card-image">
+                        <img src="images/e commerce.png" alt="E-Commerce App">
+                        <div class="card-overlay">
+                            <a href="#" target="_blank" class="overlay-btn">
+                                <i class="fa-solid fa-eye"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">E-Commerce App</h3>
+                        <p class="card-desc">Full stack e-commerce platform with authentication, product management and payment integration.</p>
+                        <div class="card-tags">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="fullstack">
+                    <div class="card-image">
+                        <img src="images/task manager.png" alt="Task Manager">
+                        <div class="card-overlay">
+                            <a href="#" target="_blank" class="overlay-btn">
+                                <i class="fa-solid fa-eye"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Task Manager</h3>
+                        <p class="card-desc">A productivity app to manage daily tasks with drag and drop, priority levels and deadline tracking.</p>
+                        <div class="card-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mern">
+                    <div class="card-image">
+                        <img src="images/super panssar.png" alt="Super Pansar">
+                        <div class="card-overlay">
+                            <a href="#" target="_blank" class="overlay-btn">
+                                <i class="fa-solid fa-eye"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Super Pansar</h3>
+                        <p class="card-desc">A full-stack inventory management system built for a local Pansar store — streamlining stock tracking, product management and sales records.</p>
+                        <div class="card-tags">
+                            <span>MongoDB</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="frontend">
+                    <div class="card-image">
+                        <img src="images/weather app.png" alt="Weather App">
+                        <div class="card-overlay">
+                            <a href="#" target="_blank" class="overlay-btn">
+                                <i class="fa-solid fa-eye"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Weather App</h3>
+                        <p class="card-desc">Real-time weather application using OpenWeather API with 5-day forecast and location detection.</p>
+                        <div class="card-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="fullstack">
+                    <div class="card-image">
+                        <img src="images/blogging.png" alt="Blog Platform">
+                        <div class="card-overlay">
+                            <a href="#" target="_blank" class="overlay-btn">
+                                <i class="fa-solid fa-eye"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Blog Platform</h3>
+                        <p class="card-desc">Full stack blogging platform with rich text editor, categories, comments and user authentication.</p>
+                        <div class="card-tags">
+                            <span>React</span>
+                            <span>Node.js</span>    
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+
+    <div class="section-header">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <p class="section-subtitle">Let's build something great together</p>
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- LEFT — Form -->
+        <div class="contact-form-box">
+            <h3 class="contact-box-title">Send a Message</h3>
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" id="name" placeholder="Zaid Ahmed Bajwa">
+            </div>
+
+            <div class="form-group">
+                <label>Your Email</label>
+                <input type="email" id="email" placeholder="zaid@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label>Subject</label>
+                <input type="text" id="subject" placeholder="Project Discussion">
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="message" rows="5" 
+                placeholder="Hi Zaid, I would like to discuss..."></textarea>
+            </div>
+
+            <button class="btn btn-primary contact-btn" onclick="sendMessage()">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+            </button>
+
+            <!-- Success Message -->
+            <p class="form-success" id="successMsg">
+                <i class="fa-solid fa-circle-check"></i>
+                Message sent successfully!
+            </p>
+
+        </div>
+
+        <!-- RIGHT — Info + Socials -->
+        <div class="contact-info-box">
+
+            <h3 class="contact-box-title">Get In Touch</h3>
+            <p class="contact-intro">
+                I am always open to new opportunities, 
+                collaborations and interesting projects. 
+                Feel free to reach out — I will get 
+                back to you as soon as possible!
+            </p>
+
+            <!-- Info Items -->
+            <div class="info-items">
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4>Email</h4>
+                        <p>zaidbajwa94@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4>Phone</h4>
+                        <p>+92 334 0017975</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4>Location</h4>
+                        <p>Lahore, Pakistan 🇵🇰</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4>Availability</h4>
+                        <p>Mon – Fri, 9AM – 6PM PKT</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-socials">
+                <h4 class="socials-title">Follow Me</h4>
+                <div class="socials-grid">
+                    <a href="https://github.com/zaidbajwa" target="_blank" class="social-btn">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zaid-ahmed-bajwa-9ba295324" target="_blank" class="social-btn">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=zaidbajwa94@gmail.com" class="social-btn">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://wa.me/923340017975" target="_blank" class="social-btn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>
+        Designed & Built with 
+        <i class="fa-solid fa-heart"></i> 
+        by <span>Zaid Ahmed Bajwa</span>
+    </p>
+    <p class="footer-copy">© 2026 All Rights Reserved</p>
+</footer>
+
+    </main>
+
+    <script src="logic.js"></script>
+</body>
+</html>
